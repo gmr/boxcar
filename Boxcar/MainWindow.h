@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Vagrant.h"
+
+@class Vagrant;
 
 @interface MainWindow : NSWindowController
 

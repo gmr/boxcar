@@ -7,6 +7,7 @@
 //
 
 #import "MainWindow.h"
+#import "Vagrant.h"
 
 @interface MainWindow ()
 
@@ -23,7 +24,6 @@
     // Create the vagrant object
     self.vagrant = [[Vagrant alloc] init];
     NSLog(@"Vagrant Version: %@", self.vagrant.versionInstalled);
-    
 }
 
 @end
