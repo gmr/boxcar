@@ -35,10 +35,10 @@
         parts = [line componentsSeparatedByString:@","];
         if ([parts count] == 4)
         {
-            if ([[parts objectAtIndex:2] isEqualToString: @"version-installed"]) {
-                self.versionInstalled = [parts objectAtIndex:3];
-            } else  if ([[parts objectAtIndex:2] isEqualToString: @"version-latest"]) {
-                self.versionLatest = [parts objectAtIndex:3];
+            if ([parts[2] isEqualToString: @"version-installed"]) {
+                self.versionInstalled = parts[3];
+            } else  if ([parts[2] isEqualToString: @"version-latest"]) {
+                self.versionLatest = parts[3];
             }
         }
     }
